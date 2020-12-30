@@ -1,0 +1,194 @@
+php_value error_reporting 2
+php_flag display_errors On
+
+
+
+#### Activamos RewriteEngine
+##############################
+RewriteEngine On
+RewriteBase /Proyectos/Ronald/AV/av7
+##############################
+
+
+#############################################################################################################
+#### Cambiamos las Rutas
+#############################################################################################################
+## Index
+RewriteRule ^index.html componentes/01-index/index.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#############################################################################################################
+#### Cambiamos las Rutas - Ejmplo desde TutoresFx
+#############################################################################################################
+#### Inicio y Nosotros
+
+## Index
+RewriteRule ^index.html componentes/01-index/index.php
+
+## Quienes Somos
+## RewriteRule ^quienes-somos.html componentes/05-nosotros/index.php?pagina=2
+
+## Nuestro Equipo
+## RewriteRule ^nuestro-equipo.html componentes/05-nosotros/index.php?pagina=3
+
+## Que Opinan de Nosotros
+## Rewriterule ^que-opinan-de-nosotros/(.+)-(.+)-comentario.html$ componentes/05-nosotros/index.php?pagina=41&url=$1&id=$2&m=2
+## Rewriterule ^que-opinan-de-nosotros/(.+)-(.+).html$ componentes/05-nosotros/index.php?pagina=41&url=$1&id=$2
+## RewriteRule ^que-opinan-de-nosotros/page=(.+) componentes/05-nosotros/index.php?pagina=4&_pagi_pg=$1
+## RewriteRule ^que-opinan-de-nosotros.html componentes/05-nosotros/index.php?pagina=4
+
+## Nuestros colaboradores
+## Rewriterule ^colaboradores/(.+)-(.+)-comentario.html$ componentes/05-nosotros/index.php?pagina=51&url=$1&id=$2&m=2
+## Rewriterule ^colaboradores/(.+)-(.+).html$ componentes/05-nosotros/index.php?pagina=51&url=$1&id=$2
+## RewriteRule ^colaboradores/page=(.+) componentes/05-nosotros/index.php?pagina=5&_pagi_pg=$1
+## RewriteRule ^colaboradores.html componentes/05-nosotros/index.php?pagina=5
+
+## Aviso Legal
+## RewriteRule ^aviso-legal.html componentes/05-nosotros/index.php?pagina=6
+
+## Terminos de uso
+## RewriteRule ^terminos.html componentes/05-nosotros/index.php?pagina=7
+
+## Responsabilidad Social
+## Rewriterule ^responsabilidad-social/(.+)-(.+)-comentario.html$ componentes/05-nosotros/index.php?pagina=81&url=$1&id=$2&m=2
+## Rewriterule ^responsabilidad-social/(.+)-(.+).html$ componentes/05-nosotros/index.php?pagina=81&url=$1&id=$2
+## RewriteRule ^responsabilidad-social/page=(.+) componentes/05-nosotros/index.php?pagina=8&_pagi_pg=$1
+## RewriteRule ^responsabilidad-social.html componentes/05-nosotros/index.php?pagina=8
+
+## Contactenos
+## RewriteRule ^contactenos.html componentes/05-nosotros/index.php?pagina=9
+
+#############################################################################################################
+#### Anáñisis e Educación
+
+## Análisis Tecnico
+## Rewriterule ^analisis-tecnico/(.+)-(.+)-comentario.html$ componentes/06-analisis-educacion/index.php?pagina=101&url=$1&id=$2&m=2
+## Rewriterule ^analisis-tecnico/(.+)-(.+).html$ componentes/06-analisis-educacion/index.php?pagina=101&url=$1&id=$2
+## RewriteRule ^analisis-tecnico/page=(.+) componentes/06-analisis-educacion/index.php?pagina=10&_pagi_pg=$1
+## RewriteRule ^analisis-tecnico.html componentes/06-analisis-educacion/index.php?pagina=10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#############################################################################################################
+#### Rutas de la Web - Login - Registrar - Perfil - Recuperar - Comentarios
+##Login
+## RewriteRule ^ingresar.html componentes/02-login/index.php
+## RewriteRule ^validar-login componentes/02-login/validar-login.php
+## RewriteRule ^cerrar-sesion componentes/02-login/logout.php
+
+##Registrar
+## RewriteRule ^registrarse.html componentes/02-login/registrar.php
+## RewriteRule ^validar-registro componentes/02-login/validar-registro.php
+## RewriteRule ^registro_completo_sin_validar.html componentes/02-login/registro_completo_sin_validar.php
+
+##Asistente Perfil
+## RewriteRule ^asistente-perfil.html componentes/03-asistente-perfil/index.php
+## RewriteRule ^guardar-perfil componentes/03-asistente-perfil/guardar-datos-perfil.php
+## RewriteRule ^asistente-foto-perfil.html componentes/03-asistente-perfil/foto-perfil.php
+## RewriteRule ^asistente-foto-perfil-subir componentes/03-asistente-perfil/foto-perfil-subir.php
+## RewriteRule ^asistente-foto-perfil-error.html componentes/03-asistente-perfil/foto-perfil.php?error=1
+## RewriteRule ^saltar-asistente componentes/03-asistente-perfil/saltar-asistente.php
+
+
+
+
+
+
+##Perfil de Usuario
+## RewriteRule ^escritorio.html componentes/04-perfil-usuario/index.php
+## RewriteRule ^mis-comentarios.html componentes/04-perfil-usuario/pagina-comentarios.php?pagina=999999999
+## RewriteRule ^mis-comentarios/page=(.+) componentes/04-perfil-usuario/pagina-comentarios.php?pagina=999999999&_pagi_pg=$1
+
+## RewriteRule ^mis-eventos.html componentes/04-perfil-usuario/pagina-eventos.php?pagina=888888888
+## RewriteRule ^mis-eventos/page=(.+) componentes/04-perfil-usuario/pagina-eventos.php?pagina=888888888&_pagi_pg=$1
+
+
+
+
+
+##Perfil de Usuario - EDITAR
+## RewriteRule ^editar-perfil.html componentes/04-perfil-usuario-editar/index.php
+## RewriteRule ^editar-perfil-guardar componentes/04-perfil-usuario-editar/editar-cuenta-guardar.php
+
+## RewriteRule ^editar-perfil-completo.html componentes/04-perfil-usuario-editar/index.php?m=2
+## RewriteRule ^editar-foto-perfil-subir componentes/04-perfil-usuario-editar/foto-perfil-editar-subir.php
+## RewriteRule ^editar-perfil-error.html componentes/04-perfil-usuario-editar/index.php?m=4
+## RewriteRule ^editar-foto-correcto.html componentes/04-perfil-usuario-editar/index.php?m=3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##Recuperar clave
+## RewriteRule ^recuperar-clave-error.html componentes/02-login/recuperar-clave-01.php?error=1
+## RewriteRule ^recuperar-clave-verificando.html componentes/02-login/recuperar-clave-01.php?error=2
+## RewriteRule ^recuperar-clave.html componentes/02-login/recuperar-clave-01.php
+## RewriteRule ^pass componentes/02-login/recuperar-clave-02.php
+## RewriteRule ^recuperar-enviado.html componentes/02-login/recuperar-clave-03.php
+
+
+##Comentario
+## RewriteRule ^enviar-comentario componentes/comentarios/formulario-enviar.php
+
+
+
+
+#############################################################################################################
+#### Errores Adicionales de Expresion en Rutas
+#############################################################################################################
+#### Página no encontrada- Error 404
+## RewriteRule ^error-404.html componentes/10-errores/index.php
+## ErrorDocument 404 http://localhost/TutoresModelo/error-404.html
+## ErrorDocument 404 http://tutores-fx.com/tutores4/error-404.html
