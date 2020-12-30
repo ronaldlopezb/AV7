@@ -1,0 +1,8 @@
+nota para imagenes...
+las imagenes de los articulos se van directamente a la carpeta
+imagenes/usuario/$Usuario/blog/$codigoArticulo.Extension
+
+
+
+
+imagenes/usuario/$Usuario/Foro/$codigoArticulo.Extension (Aqui pensar bien como sería) ya que son varias imagenes en un solo foro.. (o podria restringirlas??)
